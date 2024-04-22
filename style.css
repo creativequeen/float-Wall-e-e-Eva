@@ -1,0 +1,40 @@
+html,body {
+    background-image: url('/Imagens/bannerwall-e.gif');
+    background-size: 40%; /* tamanho da imagem*/
+    background-repeat: no-repeat; /* Evita a repetição */
+    background-position: center;
+    width: 100%;
+    height: 100vh; /* Defina a altura do elemento body */
+    margin: 0 auto; /* Centraliza o elemento body na tela */
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    top: 210px;
+    width: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: float 6s ease-out infinite;
+    
+}
+
+@media (max-width: 768px ) {
+    img {
+        bottom: 10px; /*  margem inferior para telas menores */
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-40px);
+    }
+    100% {
+        transform: translateY(0px); 
+    }
+}
